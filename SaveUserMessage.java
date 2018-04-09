@@ -15,8 +15,8 @@ public class SaveUserMessage {
 
         String command="";
         while (!command.equals("exit")) {
-            System.out.println("To save the data, enter 'save' ");
-            System.out.println("To display messages on the screen, enter 'message' ");
+            System.out.println("To save the data, enter 'save'");
+            System.out.println("To display messages on the screen, enter 'message'");
             System.out.println("To end the program, enter 'exit'");
              command = reader.readLine();
             if (command.equals("save")) {
@@ -29,7 +29,7 @@ public class SaveUserMessage {
     public static void saveCommand() throws IOException {
             System.out.println("Enter name: ");
             String name = reader.readLine();
-            System.out.println("Enter message ");
+            System.out.println("Enter message: ");
             String message = reader.readLine();
             if (mapMessagesUsers.containsKey(name)) {
                 String m = mapMessagesUsers.get(name);
